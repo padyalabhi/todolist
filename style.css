@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    font-size: 1rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.window , .pending{
+    width: 60%;
+    margin: 80px auto;
+}
+
+.window > h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.window > p {
+    font-size: 1.4rem;
+    text-align: center;
+}
+.window > .form {
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+}
+
+.list-title{
+    flex: 1;
+}
+
+.list-desc{
+    flex: 3;
+}
+.submit{
+    flex: 1;
+}
+.list-title > input , .list-desc >  input, .submit > input {
+    height: 40px;
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+.list-title > input{
+    border-right: none;
+    padding-left: 20px;
+}
+
+.list-desc > input {
+    border-right: none;
+    padding-left: 20px;
+}
+
+.list-title > input::placeholder , .list-desc > input::placeholder {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.submit > input {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.submit > input:hover{
+    background-color:  rgb(0, 189, 0);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.pending > .pending-list {
+    border: 1px solid gray;
+    display: flex;
+    width: 100%;
+    height: 45px;
+    font-size: 1rem;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 2px 0px black;
+    overflow: hidden;
+}
+
+.pending-list > .pen-title {
+    flex: 1;
+    color: green;
+}
+.pending-list > .pen-desc {
+    flex: 4;
+    color: green;
+}
+.pending-list > .pen-rem {
+    flex: 1;
+}
+
+.pending-list > .pen-rem > button {
+    width: 100%;
+    height: 45px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+.pending-list > .pen-rem > button:hover {
+    color: white;
+    cursor: pointer;
+    background-color: red;
+    transition: 0.3s;
+}
+
+.pending > .note {
+    text-align: center;
+    font-size: 1rem;
+    color: gray;
+}
+
+/* web responsive css*/
+@media only screen and (max-width: 600px) {
+    :root{
+        font-size: .8rem;
+    }
+    .window {
+        margin-top: 30px;
+        width: 90%;
+    }
+    .window > .form{
+        flex-direction: column;
+        margin: 30px 10px;
+        height: 150px;
+    }
+    .list-title{
+        width: 100%;
+    }
+    
+    .list-desc{
+        width: 100%;
+    }
+    .submit{
+        width: 40%;
+    }
+    .list-title > input{
+        border-right: 1px solid;
+        border-bottom: none;
+    }
+    
+    .list-desc > input {
+        border-right: 1px solid;
+    }
+    .pending{
+        width: 98%;
+        border: none;
+    }
+    .pending > .pending-list {
+        height: 100%;
+        border: none;
+        box-shadow: none;
+        padding-bottom: 10px;
+        border-bottom: 1px solid gray;
+        margin-bottom: 15px;
+        position: relative;
+    }
+    .pending-list > .pen-title {
+        flex: 2;
+        color: blue;
+        border: none;
+    }
+    .pending-list > .pen-desc {
+        flex: 4;
+        color: green;
+    }
+    .pending-list > .pen-rem {
+        flex: 2;
+    }
+    
+    .pending-list > .pen-rem > button {
+        width: 80%;
+        border-radius: 2px;
+        height: 25px;
+        background-color: red;
+        color: white;
+    }
+    
+    .pending > .note {
+        text-align: center;
+        font-size: 1rem;
+        color: gray;
+    }
+    
+}
+
+
+@media only screen and (min-width: 600px) {
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
